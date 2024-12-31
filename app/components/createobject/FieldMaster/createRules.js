@@ -14,7 +14,7 @@ import { useMutation } from '@apollo/client';
 
 import CreateConditions from './createConditions';
 import { validationCodeOptions, getErrorCodeOptions, errorMessageOptions, getConditions } from './ruleValidationCodeMap';
-import { ADD_RULE_TO_ENTERPRISE_FIELD } from '../../../graphql/fieldMasterMutations';
+import { ADD_RULE_TO_ENTERPRISE_FIELD } from '../../graphql/fieldMasterMutations';
 import { dialectCodeOptions } from "../../config/dialectCodeMap";
 import { uniqueRecords } from "../../../lib/arrayHelper";
 
