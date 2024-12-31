@@ -9,6 +9,11 @@ cdk-deployment/node_modules
 cdk-deployment/.cdk.staging
 cdk-deployment/cdk.out
 
+*.zip
+# next.js
+/.next/
+/out/
+
 # dependencies
 /node_modules
 /.pnp
