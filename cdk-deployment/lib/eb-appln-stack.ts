@@ -24,7 +24,11 @@ export class EBApplnStack extends cdk.Stack {
     // Construct an S3 asset Zip from directory up.
     const webAppZipArchive = new s3assets.Asset(this, 'WebAppZip', {
       path: `${__dirname}/../../`, // Adjusted to point two levels up
-      exclude: ['cdk-deployment/**'], // Exclude the entire cdk-deployment folder
+      exclude: ['cdk-deployment/**', // Exclude the entire cdk-deployment folder
+        '.gitignore',        // Exclude the .gitignore file
+        'node_modules/**',   // Exclude the node_modules directory
+        '.github/**'            // Exclude the .git directory
+      ],
     });
 
     // Create a ElasticBeanStalk app.
