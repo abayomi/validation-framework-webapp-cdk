@@ -28,7 +28,6 @@ export class EBApplnStack extends cdk.Stack {
         '.gitignore',        // Exclude the .gitignore file
         '.git/**',        // Exclude the .git file
         '.github/**',            // Exclude the .git directory
-        'node_modules/**', //when uploaded to aws this causes the error: Cannot find module '../server/require-hook'
       ],
     });
 
