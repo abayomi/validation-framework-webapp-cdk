@@ -26,7 +26,8 @@ export class EBApplnStack extends cdk.Stack {
       path: `${__dirname}/../../`, // Adjusted to point two levels up
       exclude: ['cdk-deployment/**', // Exclude the entire cdk-deployment folder
         '.gitignore',        // Exclude the .gitignore file
-        '.github/**'            // Exclude the .git directory
+        '.git/**',        // Exclude the .git file
+        '.github/**',            // Exclude the .git directory
       ],
     });
 
