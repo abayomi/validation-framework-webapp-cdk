@@ -1,7 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 $myColor: red;
-
+body {background-color: pink;}
 h1, h2, h4 {
   color: $myColor;
 }
